@@ -43,22 +43,32 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
+![Screenshot from 2025-02-27 17-54-14](https://github.com/user-attachments/assets/b532614e-9fe9-4107-8ecf-5aac2c75bc8a)
+
+
 
 
 cat < file2
 ## OUTPUT
+![Screenshot from 2025-02-27 17-54-31](https://github.com/user-attachments/assets/40d94bdb-efbd-4d59-b419-1a3f6c15a453)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+![Screenshot from 2025-02-27 17-55-04](https://github.com/user-attachments/assets/47619b05-c77e-4242-a834-0fa0698f9538)
+
  
 comm file1 file2
  ## OUTPUT
+ ![Screenshot from 2025-02-27 17-55-23](https://github.com/user-attachments/assets/c7702b1a-066e-42e0-9f20-6b3d2f8e63b0)
+
 
  
 diff file1 file2
 ## OUTPUT
+![Screenshot from 2025-02-27 17-55-51](https://github.com/user-attachments/assets/dfa9b9fd-be73-4e8f-af4c-9720ebd6f56c)
+
 
 
 #Filters
@@ -83,16 +93,21 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
+![Screenshot from 2025-02-27 18-05-44](https://github.com/user-attachments/assets/059bb6db-7bc4-483c-9046-bc56409fea1f)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
+![Screenshot from 2025-02-27 18-06-04](https://github.com/user-attachments/assets/edf9d432-916c-45ac-8c73-83c70bdf3401)
+
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![Screenshot from 2025-02-27 18-06-17](https://github.com/user-attachments/assets/3462a65a-4cc8-45bf-848b-4013d4754fbe)
+
 
 
 cat < newfile 
@@ -108,27 +123,35 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
+![Screenshot from 2025-02-27 18-07-37](https://github.com/user-attachments/assets/edbfce9a-f378-4290-b740-0e3108b80bbd)
+
 
 
 grep hello newfile 
 ## OUTPUT
 
+![Screenshot from 2025-02-27 18-07-22](https://github.com/user-attachments/assets/966c8bb4-710f-4e96-908e-5f2184bc5505)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
+![Screenshot from 2025-02-27 18-07-50](https://github.com/user-attachments/assets/5a744f02-e73c-491e-9dc6-7323a4e54234)
+
 
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
+![Screenshot from 2025-02-27 18-08-01](https://github.com/user-attachments/assets/4250bfd3-8333-4c9f-a37b-aec984e907c7)
+
 
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
+![Screenshot from 2025-02-27 18-08-19](https://github.com/user-attachments/assets/3d11c04a-ccc2-4ff5-a68a-268b22778c1d)
 
 
 
@@ -136,10 +159,14 @@ cat newfile | grep -i -c "hello"
 grep -R ubuntu /etc
 ## OUTPUT
 
+![Screenshot from 2025-03-03 09-23-05](https://github.com/user-attachments/assets/61f65b20-831a-40f3-970e-d4a9b9305648)
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![Screenshot from 2025-02-27 18-08-39](https://github.com/user-attachments/assets/f445a998-7969-4451-98cc-009d0178d942)
+
+
 
 
 cat < newfile 
@@ -163,59 +190,80 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+![Screenshot from 2025-02-27 18-51-32](https://github.com/user-attachments/assets/34ec52fa-20c0-4bdb-8cd1-b23e3723d675)
 
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
+![Screenshot from 2025-02-27 18-51-48](https://github.com/user-attachments/assets/fa0ed32e-84f0-410e-8447-3ed2a4af34eb)
+
+
 
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
+![Screenshot from 2025-02-27 18-52-03](https://github.com/user-attachments/assets/10382418-97cb-43eb-aef3-129aa80f45f1)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+![Screenshot from 2025-02-27 18-52-20](https://github.com/user-attachments/assets/8841135b-85a7-45a8-9666-08703c832883)
+
 
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
+![Screenshot from 2025-02-27 18-52-37](https://github.com/user-attachments/assets/db4d8f2b-d634-4260-988d-75c3a282a48f)
+
 
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![Screenshot from 2025-02-27 18-52-54](https://github.com/user-attachments/assets/ea5dd31e-838f-4d8c-8d59-222742b3d698)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![Screenshot from 2025-02-27 18-53-06](https://github.com/user-attachments/assets/9431071a-49c4-4992-b804-9887ed5be198)
 
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+![Screenshot from 2025-02-27 18-53-19](https://github.com/user-attachments/assets/c5fc3174-d0b7-4cdf-8cba-54e7c28922bc)
+
 
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![Screenshot from 2025-02-27 18-53-29](https://github.com/user-attachments/assets/6afb1bd7-9c86-4c4e-a63d-fd5f966b2fec)
+
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![Screenshot from 2025-02-27 18-53-39](https://github.com/user-attachments/assets/a5a631b6-1326-4bb5-a332-e2e47ac7d8f0)
+
 
 
 egrep l{2} newfile
 ## OUTPUT
+![Screenshot from 2025-03-03 09-33-18](https://github.com/user-attachments/assets/45ba9e29-4679-4ed8-b9eb-986e18c93b39)
+
 
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![Screenshot from 2025-03-03 09-33-28](https://github.com/user-attachments/assets/ee3500ba-7078-4e2c-b239-bb0448e40e3b)
+
 
 
 cat > file23
@@ -234,31 +282,44 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
+![Screenshot from 2025-02-27 19-07-58](https://github.com/user-attachments/assets/47605da7-c673-419e-89c9-5b080d1b665a)
 
 
 
 sed -n -e '$p' file23
 ## OUTPUT
+![Screenshot from 2025-02-27 19-08-08](https://github.com/user-attachments/assets/33319282-41f8-4225-b0aa-69f452454940)
+
 
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
+![Screenshot from 2025-02-27 19-08-19](https://github.com/user-attachments/assets/109422e5-07ca-4908-a773-15598590a86e)
+
+
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+
+![Screenshot from 2025-02-27 19-08-28](https://github.com/user-attachments/assets/acb1b888-46f3-4837-a91b-72570b8b5c77)
 
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
+![Screenshot from 2025-02-27 19-08-36](https://github.com/user-attachments/assets/c2572b6b-0708-4c29-a8e3-b82377b1bc16)
+
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+
+![Screenshot from 2025-02-27 19-09-21](https://github.com/user-attachments/assets/93f6293a-aa53-469c-96f5-70403c140d5f)
+
 
 
 
@@ -266,39 +327,61 @@ sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
 
+![Screenshot from 2025-02-27 19-09-41](https://github.com/user-attachments/assets/f3c0d57f-4ace-4ea4-a732-85ee2f8bd2b2)
+
+
+
+
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+
+![Screenshot from 2025-02-27 19-09-28](https://github.com/user-attachments/assets/f31b6ddc-f689-4c3e-99ba-46214fa2ef24)
+
 
 
 
 seq 10 
 ## OUTPUT
 
+![Screenshot from 2025-02-27 19-09-48](https://github.com/user-attachments/assets/a3df73af-4988-4b70-baa0-7b1407bfa3a3)
+
+
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+
+![Screenshot from 2025-02-27 19-10-05](https://github.com/user-attachments/assets/87eb122b-c5a5-4ba2-b690-377954cbf112)
+
 
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
+![Screenshot from 2025-02-27 19-10-13](https://github.com/user-attachments/assets/a35e752c-4f33-42ee-b6d0-cb6f82f4bd73)
+
+
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+
+![Screenshot from 2025-02-27 19-10-22](https://github.com/user-attachments/assets/ec0f5d07-2e10-48b5-ac45-501fbb6812d1)
 
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
+![Screenshot from 2025-02-27 19-10-28](https://github.com/user-attachments/assets/2b23b750-7112-4134-a6bc-ccef56a07468)
+
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+
 
 
 sed -n '2,4{s/^/$/;p}' file23
