@@ -463,6 +463,8 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 tar -cvf backup.tar *
 ## OUTPUT
 
+![Screenshot from 2025-03-03 18-42-53](https://github.com/user-attachments/assets/11ef7c5d-f0f5-4d56-8764-b3afdf6e7b19)
+
 
 mkdir backupdir
  
@@ -471,19 +473,24 @@ mv backup.tar backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
+![Screenshot from 2025-03-03 18-43-10](https://github.com/user-attachments/assets/e4f20658-69e5-4bb6-a695-b72634967cc7)
+
 
 tar -xvf backup.tar
-## OUTPUT
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+
+ ![Screenshot from 2025-03-03 18-43-28](https://github.com/user-attachments/assets/cadcad00-5929-497d-a1a9-40442f6edfc6)
+
 gunzip backup.tar.gz
 ## OUTPUT
 
- 
+
+ ![Screenshot from 2025-03-03 18-43-42](https://github.com/user-attachments/assets/e66f1bd3-d63a-485a-b6dc-99035dc5ccd4)
+
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
@@ -493,7 +500,9 @@ chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
 
- 
+
+ ![Screenshot from 2025-03-03 18-44-00](https://github.com/user-attachments/assets/216ec80e-5d81-4d2f-a1f3-af447cecf773)
+
 cat << stop > herecheck.txt
 ```
 hello in this world
@@ -504,6 +513,8 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+
+![Screenshot from 2025-03-03 18-44-13](https://github.com/user-attachments/assets/9a6c1776-9838-4a9d-b9c8-0d697a337bb9)
 
 
 cat < scriptest.sh 
@@ -543,23 +554,35 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
- 
+
+ ![Screenshot from 2025-03-03 18-44-33](https://github.com/user-attachments/assets/3c6d9a2d-9777-4d2d-82c9-34e71ed0700d)
+
 ls file1
 ## OUTPUT
 
+![Screenshot from 2025-03-03 18-44-55](https://github.com/user-attachments/assets/116f6d62-d5a0-4375-93c4-e91ab142e05a)
+
 echo $?
 ## OUTPUT 
+
+![Screenshot from 2025-03-03 18-45-14](https://github.com/user-attachments/assets/a3677958-74b2-42d2-91b9-3a447b6122a8)
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
+
+![Screenshot from 2025-03-03 18-45-14](https://github.com/user-attachments/assets/d3d32396-db59-472d-83b9-dc594c6f7887)
+
  
 abcd
  
 echo $?
  ## OUTPUT
 
+
+![Screenshot from 2025-03-03 18-45-29](https://github.com/user-attachments/assets/bcc3bfca-1ecd-4c3e-94bb-bc3d5267d966)
 
  
 # mis-using string comparisons
@@ -593,11 +616,16 @@ fi
 ##OUTPUT
 
 
+![Screenshot from 2025-03-03 18-46-14](https://github.com/user-attachments/assets/46d9ab61-5950-4b1a-9cac-f4281e8bd983)
+
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+
+![Screenshot from 2025-03-03 18-46-31](https://github.com/user-attachments/assets/f81234b0-7873-4365-aef1-3990fea542c8)
+
 
 
 # check file ownership
@@ -625,6 +653,8 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+
+![Screenshot from 2025-03-03 18-47-00](https://github.com/user-attachments/assets/8b10e28a-7aca-4686-baf5-cf95c22e9b7f)
 
 # check if with file location
 cat>ifnested.sh 
@@ -671,6 +701,8 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+
+![Screenshot from 2025-03-03 18-47-15](https://github.com/user-attachments/assets/38447675-5b08-4b86-a133-5df316b92209)
 
 
 
@@ -767,6 +799,8 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+
+![Screenshot from 2025-03-03 18-48-03](https://github.com/user-attachments/assets/d14686ff-f981-4cda-ad87-cfa857dc991e)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -879,7 +913,9 @@ done
  
 $ chmod 755 forin1.sh
  
- 
+
+ ![Screenshot from 2025-03-03 18-48-28](https://github.com/user-attachments/assets/fc270fd6-b89d-4d05-8fee-dbf04c63aea2)
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -904,7 +940,9 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+
+ ![Screenshot from 2025-03-01 18-45-54](https://github.com/user-attachments/assets/9cbb9c04-6d7e-474d-98af-f64698c38ae0)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -949,6 +987,8 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
+
+![Screenshot from 2025-03-03 18-49-12](https://github.com/user-attachments/assets/7716587a-c558-4dbe-a642-49d874ec119f)
 
 
 cat forctype.sh 
@@ -1098,8 +1138,13 @@ fi
 
  ./funcex.sh 
 
+![Screenshot from 2025-03-03 18-49-34](https://github.com/user-attachments/assets/6dbfcc44-d56c-4325-bfb6-de1de0f04c3d)
+
  
  ./funcex.sh 1 2
+
+ ![Screenshot from 2025-03-03 18-49-48](https://github.com/user-attachments/assets/39173d2e-859b-4d5e-9885-20dd59871dbe)
+
 
  
 cat argshift.sh
