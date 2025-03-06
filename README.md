@@ -123,27 +123,31 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-![Screenshot from 2025-02-27 18-07-37](https://github.com/user-attachments/assets/edbfce9a-f378-4290-b740-0e3108b80bbd)
+![Screenshot from 2025-03-06 09-29-41](https://github.com/user-attachments/assets/b3bae80c-9c97-4f89-bf81-3d90a61a97e0)
+
 
 
 
 grep hello newfile 
 ## OUTPUT
 
-![Screenshot from 2025-02-27 18-07-22](https://github.com/user-attachments/assets/966c8bb4-710f-4e96-908e-5f2184bc5505)
+![Screenshot from 2025-03-06 09-29-53](https://github.com/user-attachments/assets/ecd47558-e824-4af4-88e9-94e33d5a9b65)
+
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-![Screenshot from 2025-02-27 18-07-50](https://github.com/user-attachments/assets/5a744f02-e73c-491e-9dc6-7323a4e54234)
+![Screenshot from 2025-03-06 09-30-04](https://github.com/user-attachments/assets/1793f456-95ee-4041-8c9b-ed4d3354dc45)
+
 
 
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-![Screenshot from 2025-02-27 18-08-01](https://github.com/user-attachments/assets/4250bfd3-8333-4c9f-a37b-aec984e907c7)
+![Screenshot from 2025-03-06 09-30-17](https://github.com/user-attachments/assets/770fe2da-e8f5-4948-a551-41ed0c154a0d)
+
 
 
 
@@ -151,7 +155,8 @@ cat newfile | grep -i "hello"
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-![Screenshot from 2025-02-27 18-08-19](https://github.com/user-attachments/assets/3d11c04a-ccc2-4ff5-a68a-268b22778c1d)
+![Screenshot from 2025-03-06 09-30-42](https://github.com/user-attachments/assets/ffedefb4-63bc-4913-a644-f2e3f96db4ed)
+
 
 
 
@@ -164,7 +169,8 @@ grep -R ubuntu /etc
 
 grep -w -n world newfile   
 ## OUTPUT
-![Screenshot from 2025-02-27 18-08-39](https://github.com/user-attachments/assets/f445a998-7969-4451-98cc-009d0178d942)
+![Screenshot from 2025-03-06 09-30-53](https://github.com/user-attachments/assets/4b083329-4c5e-4051-9bdb-009a1e9285a8)
+
 
 
 
